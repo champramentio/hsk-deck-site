@@ -622,6 +622,10 @@ h1 {
     margin-right: auto;
   }
 
+  .hero .eyebrow {
+    margin-top: 1rem;
+  }
+
   .hero-inner .actions {
     justify-content: center;
   }
