@@ -229,6 +229,11 @@ h1 {
   color: #fff;
 }
 
+.google-play-badge {
+  display: block;
+  height: auto;
+}
+
 .trust-list {
   display: grid;
   grid-template-columns: repeat(2, max-content);
