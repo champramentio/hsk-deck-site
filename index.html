@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSK Deck — Master Chinese Vocabulary</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #111827;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .card {
+      background: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #60a5fa;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #9ca3af;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #1e3a5f;
+      color: #93c5fd;
+      border: 1px solid #3b82f6;
+      border-radius: 8px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .features {
+      text-align: left;
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+    .features li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #374151;
+    }
+    .features li:before {
+      content: "📚 ";
+    }
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #1d4ed8; }
+    .footer {
+      margin-top: 2rem;
+      color: #6b7280;
+      font-size: 0.85rem;
+    }
+    .footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>HSK Deck</h1>
+    <p class="subtitle">Master Chinese vocabulary, one card at a time.</p>
+    <span class="badge">Coming to Google Play</span>
+
+    <ul class="features">
+      <li>10,951 words across HSK Levels 1–9</li>
+      <li>Word-level pinyin with tone marks</li>
+      <li>3 example sentences per word</li>
+      <li>Glassmorphism UI with dark theme</li>
+    </ul>
+
+    <a href="https://play.google.com/store/apps/details?id=com.champramentio.hskdeck" class="btn">Download on Google Play</a>
+
+    <div class="footer">
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="mailto:champramentio@gmail.com">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
