@@ -232,6 +232,7 @@ h1 {
 .google-play-badge {
   display: block;
   height: auto;
+  margin-left: -12px;
 }
 
 .trust-list {
