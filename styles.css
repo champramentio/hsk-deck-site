@@ -586,6 +586,15 @@ h1 {
     padding-bottom: 360px;
   }
 
+  .hero h1,
+  .hero .hero-copy {
+    text-shadow: 0 0 24px rgba(255,255,255,0.92), 0 0 48px rgba(255,255,255,0.7);
+  }
+
+  .hero .hero-copy {
+    max-width: 420px;
+  }
+
   .hero-stage::before {
     right: -34%;
     bottom: -12%;
