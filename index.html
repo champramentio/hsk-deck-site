@@ -1,108 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSK Deck — Master Chinese Vocabulary</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: #111827;
-      color: #e5e7eb;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    .card {
-      background: #1f2937;
-      border: 1px solid #374151;
-      border-radius: 16px;
-      padding: 3rem 2rem;
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #60a5fa;
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
-      color: #9ca3af;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    .badge {
-      display: inline-block;
-      background: #1e3a5f;
-      color: #93c5fd;
-      border: 1px solid #3b82f6;
-      border-radius: 8px;
-      padding: 0.3rem 0.8rem;
-      font-size: 0.85rem;
-      margin-bottom: 2rem;
-    }
-    .features {
-      text-align: left;
-      list-style: none;
-      margin: 1.5rem 0;
-    }
-    .features li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #374151;
-    }
-    .features li:before {
-      content: "📚 ";
-    }
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      padding: 0.8rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1.5rem;
-      transition: background 0.2s;
-    }
-    .btn:hover { background: #1d4ed8; }
-    .footer {
-      margin-top: 2rem;
-      color: #6b7280;
-      font-size: 0.85rem;
-    }
-    .footer a {
-      color: #93c5fd;
-      text-decoration: none;
-    }
-    .footer a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>HSK Deck</h1>
-    <p class="subtitle">Master Chinese vocabulary, one card at a time.</p>
-    <span class="badge">Coming to Google Play</span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HSK Deck - Mandarin Vocabulary Practice</title>
+    <meta name="description" content="HSK Deck is a simple, fast Mandarin vocabulary app with thousands of HSK words in your pocket, free HSK 1-3, and a low-cost one-time lifetime unlock.">
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">
+          <img src="assets/icon.png" alt="HSK Deck app icon">
+          <span>HSK Deck</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#screens">Practice</a>
+          <a href="#premium">Premium</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </header>
 
-    <ul class="features">
-      <li>10,951 words across HSK Levels 1–9</li>
-      <li>Word-level pinyin with tone marks</li>
-      <li>3 example sentences per word</li>
-      <li>Glassmorphism UI with dark theme</li>
-    </ul>
+    <main>
+      <section class="hero">
+        <div class="hero-stage" aria-hidden="true">
+          <figure class="hero-screen hero-screen-left">
+            <img src="assets/screen-home.jpg" alt="">
+          </figure>
+          <figure class="hero-screen hero-screen-main">
+            <img src="assets/screen-flashcards.jpg" alt="">
+          </figure>
+          <figure class="hero-screen hero-screen-right">
+            <img src="assets/screen-writing.jpg" alt="">
+          </figure>
+        </div>
+        <div class="hero-inner">
+          <p class="eyebrow">Mandarin vocabulary practice</p>
+          <h1>HSK Deck</h1>
+          <p class="hero-copy">Simple, fast HSK 3.0 vocabulary practice with thousands of Mandarin words in your pocket. Study with flashcards, audio, quizzes, writing practice, and progress tracking from HSK 1 through HSK 7-9.</p>
+          <div class="actions">
+            <a class="button primary" href="#features">Explore features</a>
+            <a class="button" href="privacy-policy.html">Privacy policy</a>
+          </div>
+          <ul class="trust-list" aria-label="HSK Deck highlights">
+            <li>No ads</li>
+            <li>No account required</li>
+            <li>HSK 1-3 free</li>
+            <li>Pay once</li>
+          </ul>
+        </div>
+      </section>
 
-    <a href="https://play.google.com/store/apps/details?id=com.champramentio.hskdeck" class="btn">Download on Google Play</a>
+      <section class="section intro-band">
+        <div class="wrap intro-grid">
+          <div>
+            <p class="eyebrow">Made for daily review</p>
+            <h2>Learn words faster. Review them anywhere.</h2>
+          </div>
+          <p>HSK Deck keeps the study loop simple and quick: browse vocabulary, review flashcards, listen to pronunciation, answer quiz prompts, and practice Chinese characters without needing an account or a noisy feed.</p>
+        </div>
+      </section>
 
-    <div class="footer">
-      <a href="privacy.html">Privacy Policy</a> &middot;
-      <a href="mailto:champramentio@gmail.com">Email</a> &middot;
-      <a href="https://github.com/champramentio/hsk-deck/issues">Feedback</a>
-    </div>
-  </div>
-</body>
+      <section class="section" id="features">
+        <div class="wrap">
+          <div class="section-title">
+            <h2>Review Them Anywhere</h2>
+            <p>Simple, fast Mandarin review for daily practice, exam preparation, and quick study sessions that fit in your hand.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature">
+              <strong>Flashcards</strong>
+              <p>Review hanzi, pinyin, English meanings, examples, and pronunciation in one clean card flow.</p>
+            </article>
+            <article class="feature">
+              <strong>Audio and quizzes</strong>
+              <p>Train recognition with meaning, pinyin, and audio quiz modes built for fast recall.</p>
+            </article>
+            <article class="feature">
+              <strong>Writing practice</strong>
+              <p>Use character writing practice to slow down, notice structure, and build stronger memory.</p>
+            </article>
+            <article class="feature">
+              <strong>HSK 1-9 decks</strong>
+              <p>Carry thousands of words from beginner vocabulary through intermediate, advanced, and mastery levels.</p>
+            </article>
+            <article class="feature">
+              <strong>Progress tracking</strong>
+              <p>Keep review progress on your device and continue from where you left off.</p>
+            </article>
+            <article class="feature">
+              <strong>No ads</strong>
+              <p>HSK Deck does not display ads or use advertising trackers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="screens">
+        <div class="wrap">
+          <div class="section-title">
+            <h2>Practice HSK Your Way</h2>
+            <p>More study surfaces beyond the hero: browse vocabulary, run quick quizzes, and switch into a darker study mood when you want less glare.</p>
+          </div>
+          <div class="screen-grid">
+            <figure class="screen-card">
+              <img src="assets/screen-word-list.jpg" alt="HSK Deck word list showing Chinese vocabulary with pinyin and English meanings">
+              <figcaption>Browse thousands of HSK words with pinyin and meanings.</figcaption>
+            </figure>
+            <figure class="screen-card featured">
+              <img src="assets/screen-quiz.jpg" alt="HSK Deck quiz modes screen for meaning, pinyin, and audio practice">
+              <figcaption>Train recall with meaning, pinyin, and audio quiz modes.</figcaption>
+            </figure>
+            <figure class="screen-card dark-card">
+              <img src="assets/screen-card-detail-dark-real.png" alt="Real dark mode HSK Deck flashcard detail screen with hanzi, pinyin, meaning, and example text">
+              <figcaption>Use a darker card detail view for lower-glare evening review.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="premium">
+        <div class="wrap">
+          <div class="section-title">
+            <h2>Start free. Pay once. Keep it.</h2>
+            <p>HSK 1-3 are free. Unlock HSK 4-9 with one affordable lifetime purchase through Google Play Billing. No subscription, no monthly fee.</p>
+          </div>
+          <div class="level-strip" aria-label="HSK Deck access levels">
+            <div class="level"><span>Included free</span><b>HSK 1</b></div>
+            <div class="level"><span>Included free</span><b>HSK 2</b></div>
+            <div class="level"><span>Included free</span><b>HSK 3</b></div>
+            <div class="level"><span>Lifetime unlock</span><b>HSK 4-9</b></div>
+          </div>
+          <div class="premium-note">
+            <strong>No subscription.</strong>
+            <span>Buy once for lifetime access to the premium decks. The optional unlock is a non-consumable in-app purchase handled by Google Play.</span>
+          </div>
+          <div class="actions premium-actions">
+            <a class="button primary" href="https://play.google.com/store/apps/details?id=com.champ.hsk_deck">Buy via Google Play</a>
+            <a class="button" href="privacy-policy.html">Read privacy policy</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-title">
+            <h2>Privacy, Plain and Simple</h2>
+            <p>HSK Deck does not require an account, does not show ads, and stores learning progress locally on your device. Google Play handles purchase processing for the optional lifetime unlock.</p>
+          </div>
+          <div class="policy-grid">
+            <a class="policy-link" href="privacy-policy.html">
+              <strong>Privacy Policy</strong>
+              <span>Use this URL in Google Play Console.</span>
+            </a>
+            <a class="policy-link" href="data-safety.html">
+              <strong>Data Safety Summary</strong>
+              <span>Plain-language data handling overview.</span>
+            </a>
+            <a class="policy-link" href="data-deletion.html">
+              <strong>Data Deletion</strong>
+              <span>How to clear local app data.</span>
+            </a>
+            <a class="policy-link" href="support.html">
+              <strong>Support</strong>
+              <span>Contact and purchase help.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 HSK Deck</span>
+        <span>
+          <a href="privacy-policy.html">Privacy Policy</a> ·
+          <a href="data-safety.html">Data Safety</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="support.html">Support</a>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
